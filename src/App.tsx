@@ -22,7 +22,7 @@ function App() {
           <Button>Three</Button>
         </ButtonGroup>
       </div>
-      <h1>Enter the Prompt</h1>
+      <h2>Enter the Prompt</h2>
       <div className="card">
         <TextField 
           id="outlined-basic"
