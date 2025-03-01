@@ -1,12 +1,14 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 
 function App() {
+
+  const [selectedAI, setSelectedAI] = useState<string | null>(null);
+  const aiButtons = ['ChatGPT', 'DeepSeek', 'Gemini'];
 
   return (
     <>
@@ -16,11 +18,16 @@ function App() {
         </a>
       </div>
       <div className="models">
-        <ButtonGroup variant="contained" aria-label="Basic button group">
-          <Button>One</Button>
-          <Button>Two</Button>
-          <Button>Three</Button>
-        </ButtonGroup>
+        {aiButtons.map((ai) => (
+          <Button
+            key={ai}
+            // Apply "activeAiBtn" class if this button is selected
+            className={`aiBtn ${selectedAI === ai ? 'activeAiBtn' : ''}`}
+            onClick={() => setSelectedAI(ai)}
+          >
+            {ai}
+          </Button>
+        ))}
       </div>
       <h2>Enter the Prompt</h2>
       <div className="card">
@@ -48,6 +55,7 @@ function App() {
           sx={{ 
             marginTop: '20px'
           }}
+          className='submitBtn'
         >
           Submit
         </Button>
