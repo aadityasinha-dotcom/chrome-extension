@@ -38,13 +38,13 @@ function App() {
             input: { color: 'white' },
             '& .MuiOutlinedInput-root': {
               '& fieldset': {
-                borderColor: 'black', // Default border color
+                borderColor: 'black',
               },
               '&:hover fieldset': {
-                borderColor: 'black', // Border color on hover
+                borderColor: 'black',
               },
               '&.Mui-focused fieldset': {
-                borderColor: 'white', // Border color when focused
+                borderColor: 'white',
               },
             },
           }} 
