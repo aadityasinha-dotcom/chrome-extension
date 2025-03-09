@@ -21,7 +21,6 @@ function App() {
         {aiButtons.map((ai) => (
           <Button
             key={ai}
-            // Apply "activeAiBtn" class if this button is selected
             className={`aiBtn ${selectedAI === ai ? 'activeAiBtn' : ''}`}
             onClick={() => setSelectedAI(ai)}
           >
