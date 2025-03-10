@@ -30,25 +30,25 @@ function App() {
       </div>
       <h2>Enter the Prompt</h2>
       <div className="card">
-        <TextField 
-          id="outlined-basic"
-          fullWidth
-          sx={{ 
-            input: { color: 'white' },
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: 'black',
-              },
-              '&:hover fieldset': {
-                borderColor: 'black',
-              },
-              '&.Mui-focused fieldset': {
-                borderColor: 'white',
-              },
-            },
-          }} 
-          variant="outlined" 
-        />
+        {/* <TextField  */}
+        {/*   id="outlined-basic" */}
+        {/*   fullWidth */}
+        {/*   sx={{  */}
+        {/*     input: { color: 'white' }, */}
+        {/*     '& .MuiOutlinedInput-root': { */}
+        {/*       '& fieldset': { */}
+        {/*         borderColor: 'black', */}
+        {/*       }, */}
+        {/*       '&:hover fieldset': { */}
+        {/*         borderColor: 'black', */}
+        {/*       }, */}
+        {/*       '&.Mui-focused fieldset': { */}
+        {/*         borderColor: 'white', */}
+        {/*       }, */}
+        {/*     }, */}
+        {/*   }}  */}
+        {/*   variant="outlined"  */}
+        {/* /> */}
         <Button 
           variant="contained" 
           sx={{ 
