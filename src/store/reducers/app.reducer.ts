@@ -1,4 +1,4 @@
-import { AppAction, AppActionType } from 'store/action-types/app.types';
+import { AppAction, AppActionType } from '../action-types/app.types';
 import moment from 'moment';
 
 interface IIPConfig {

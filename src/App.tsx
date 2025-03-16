@@ -3,9 +3,12 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useSelector } from 'react-redux';
+import { RootState } from './store/reducers';
 
 function App() {
 
+  const { isPageLoading } = useSelector((state: RootState) => state.app);
   const [selectedAI, setSelectedAI] = useState<string | null>(null);
   const aiButtons = ['ChatGPT', 'DeepSeek', 'Gemini'];
 
@@ -16,6 +19,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      {isPageLoading}
       <div className="models">
         {aiButtons.map((ai) => (
           <Button
