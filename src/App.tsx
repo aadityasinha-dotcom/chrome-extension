@@ -21,15 +21,15 @@ function App() {
       </div>
       {isPageLoading}
       <div className="models">
-        {aiButtons.map((ai) => (
-          <Button
-            key={ai}
-            className={`aiBtn ${selectedAI === ai ? 'activeAiBtn' : ''}`}
-            onClick={() => setSelectedAI(ai)}
-          >
-            {ai}
-          </Button>
-        ))}
+        {/* {aiButtons.map((ai) => ( */}
+        {/*   <Button */}
+        {/*     key={ai} */}
+        {/*     className={`aiBtn ${selectedAI === ai ? 'activeAiBtn' : ''}`} */}
+        {/*     onClick={() => setSelectedAI(ai)} */}
+        {/*   > */}
+        {/*     {ai} */}
+        {/*   </Button> */}
+        {/* ))} */}
       </div>
       <h2>Enter the Prompt</h2>
       <div className="card">
