@@ -10,7 +10,7 @@ function App() {
 
   const { isPageLoading } = useSelector((state: RootState) => state.app);
   const [selectedAI, setSelectedAI] = useState<string | null>(null);
-  // const aiButtons = ['ChatGPT', 'DeepSeek', 'Gemini'];
+  const aiButtons = ['ChatGPT', 'DeepSeek', 'Gemini'];
 
   return (
     <>
